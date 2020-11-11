@@ -1,0 +1,22 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/2dd90bca-5aaf-48f6-bd8e-1884bec255bb",
+        "Name": "2dd90bca-5aaf-48f6-bd8e-1884bec255bb",
+        "DisplayName": "Visual Studio Professional Subscription",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
