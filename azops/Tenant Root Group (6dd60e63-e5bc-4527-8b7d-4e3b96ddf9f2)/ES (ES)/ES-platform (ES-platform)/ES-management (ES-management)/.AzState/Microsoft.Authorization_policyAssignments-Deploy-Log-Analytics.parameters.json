@@ -1,0 +1,52 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "b4e28180-2361-4cd7-a6df-86827a66a6c3",
+          "tenantId": "6dd60e63-e5bc-4527-8b7d-4e3b96ddf9f2",
+          "type": "SystemAssigned"
+        },
+        "Location": "northeurope",
+        "Name": "Deploy-Log-Analytics",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "Properties": {
+          "Description": "Deploy-Log-Analytics",
+          "DisplayName": "Deploy-Log-Analytics",
+          "NotScopes": null,
+          "Parameters": {
+            "automationAccountName": {
+              "value": "ES-a-2dd90bca-5aaf-48f6-bd8e-1884bec255bb"
+            },
+            "automationRegion": {
+              "value": "northeurope"
+            },
+            "retentionInDays": {
+              "value": "30"
+            },
+            "rgName": {
+              "value": "ES-mgmt"
+            },
+            "workspaceName": {
+              "value": "ES-la-2dd90bca-5aaf-48f6-bd8e-1884bec255bb"
+            },
+            "workspaceRegion": {
+              "value": "northeurope"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ES/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+          "Scope": "/providers/Microsoft.Management/managementGroups/ES-management"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ES-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "ResourceName": "Deploy-Log-Analytics",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

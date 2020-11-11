@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "92dbd8e1-87b0-417a-bad5-3270e1e2edf8",
+          "tenantId": "6dd60e63-e5bc-4527-8b7d-4e3b96ddf9f2",
+          "type": "SystemAssigned"
+        },
+        "Location": "northeurope",
+        "Name": "Deploy-WS-Arc-Monitoring",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES/providers/Microsoft.Authorization/policyAssignments/Deploy-WS-Arc-Monitoring",
+        "Properties": {
+          "Description": "Deploy-Windows-Arc-Monitoring",
+          "DisplayName": "Deploy-Windows-Arc-Monitoring",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/2dd90bca-5aaf-48f6-bd8e-1884bec255bb/resourcegroups/es-mgmt/providers/microsoft.operationalinsights/workspaces/es-la-2dd90bca-5aaf-48f6-bd8e-1884bec255bb"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/69af7d4a-7b18-4044-93a9-2651498ef203",
+          "Scope": "/providers/Microsoft.Management/managementGroups/ES"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ES/providers/Microsoft.Authorization/policyAssignments/Deploy-WS-Arc-Monitoring",
+        "ResourceName": "Deploy-WS-Arc-Monitoring",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

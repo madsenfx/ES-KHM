@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "61dcc69c-8f29-4577-b697-155d81f0a89f",
+          "tenantId": "6dd60e63-e5bc-4527-8b7d-4e3b96ddf9f2",
+          "type": "SystemAssigned"
+        },
+        "Location": "northeurope",
+        "Name": "Deploy-VM-Backup",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/ES-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+        "Properties": {
+          "Description": "Deploy-VM-Backup",
+          "DisplayName": "Deploy-VM-Backup",
+          "NotScopes": null,
+          "Parameters": {},
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/ES/providers/Microsoft.Authorization/policyDefinitions/Deploy-AzureBackup-on-VM",
+          "Scope": "/providers/Microsoft.Management/managementGroups/ES-landingzones"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/ES-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+        "ResourceName": "Deploy-VM-Backup",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}
