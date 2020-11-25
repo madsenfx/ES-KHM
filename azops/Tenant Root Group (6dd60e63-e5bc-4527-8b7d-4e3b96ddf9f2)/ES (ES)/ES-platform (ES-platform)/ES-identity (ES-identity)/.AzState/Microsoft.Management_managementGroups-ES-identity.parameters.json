@@ -9,19 +9,12 @@
         "Name": "ES-identity",
         "TenantId": "6dd60e63-e5bc-4527-8b7d-4e3b96ddf9f2",
         "DisplayName": "ES-identity",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-11T08:26:59.3431913Z",
+        "UpdatedBy": "c15c3cb3-9ae0-425c-9c21-ffd173ef1c5b",
         "ParentId": "/providers/Microsoft.Management/managementGroups/ES-platform",
         "ParentName": "ES-platform",
         "ParentDisplayName": "ES-platform",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }
